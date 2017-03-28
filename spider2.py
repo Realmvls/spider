@@ -5,7 +5,7 @@ import requests
 f = open('1.html','r')
 html = f.read()
 f.close()
-
+#进行正则匹配
 pic_url = re.findall('src="(.*?)" alt',html,re.S)
 i = 0
 for each in pic_url:

@@ -8,6 +8,7 @@ f.close()
 #进行正则匹配
 pic_url = re.findall('src="(.*?)" alt',html,re.S)
 i = 0
+#保存本地
 for each in pic_url:
     print 'now downloading:'+ each
     pic = requests.get(each)
